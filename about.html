@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	<link rel="stylesheet" type="text/css" href="about.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<title>About Me</title>
+
+	<script language="javascript">
+$(document).ready(function(){
+  // Add the hover handler to the link
+  $("#cf ").hover(
+    function(){ // When mouse pointer is above the link
+      // Make the image inside link to be transparent
+      $(this).find("img").animate(
+        {opacity:"0.5"},
+        {duration:300}
+      );
+    },
+    function(){ // When mouse pointer move out of the link
+      // Return image to its previous state
+      $(this).find("img").animate(
+        {opacity:"1"},
+        {duration:300}
+      );
+    }
+  );
+});
+</script>
+
+</head>
+
+<body>
+	<script type="text/javascript">
+		
+		function Technical(){
+
+
+
+			document.getElementById('show').innerHTML="<center><strong>C,C++,Python,Java,Sql,Android</strong></center>";
+		}
+		function Inter(){
+			document.getElementById('show').innerHTML="<center><strong>Management,Puncutality,Teamplay,Observant,Fast-Learner";
+		}
+	</script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<div>
+<header>
+	<div id="cf">
+	<center><h1> <img src="abt3.png"></h1></center></div>
+</header>
+
+<span ><img src="abc.png"  alt="Ritika" style="width: 800px;height:250px;margin-top: 30px;margin-left: 400px;"></span>
+
+
+	
+
+</div>	
+</div>
+<hr>
+<center>
+<div>
+	<button class="btn btn-primary" onclick="Technical()">Technical Skills</button>
+	<button class="btn btn-primary" onclick="Inter()">InterPersonal Skills</button>
+</div></center>
+<div id="show">
+
+	</div>
+</body>
+
+</html>
